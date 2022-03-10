@@ -14,7 +14,7 @@ SECRET_KEY = os.environ.get('JUNTAGRICO_SECRET_KEY')
 
 DEBUG = os.environ.get("JUNTAGRICO_DEBUG", 'False')=='True'
 
-ALLOWED_HOSTS = ['gemuesenarr.juntagrico.science', 'localhost',]
+ALLOWED_HOSTS = ['gemuesenarr.juntagrico.science', 'localhost', 'mitmachen-gemuese.hof-narr.ch']
 
 
 # Application definition
