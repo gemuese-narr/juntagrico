@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('JUNTAGRICO_SECRET_KEY')
 
-DEBUG = True #os.environ.get("JUNTAGRICO_DEBUG", 'False')=='True'
+DEBUG = os.environ.get("JUNTAGRICO_DEBUG", 'False')=='True'
 
 ALLOWED_HOSTS = ['gemuesenarr.juntagrico.science', 'localhost', 'mitmachen-gemuese.hof-narr.ch']
 
@@ -171,4 +171,4 @@ SHARE_PRICE = "1"
 
 INFO_EMAIL = "gemuese@hof-narr.ch"
 SERVER_URL = "www.gemuesenarr.org"
-STYLES = {'static': ['/static/demo/css/customize.css']}
+STYLES = {'static': ['gemuesenarr/css/customize.css']}
